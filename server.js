@@ -23,7 +23,6 @@ const apiRoutes = require('./routes/api');
 app.use('/auth', authRoutes);
 app.use('/api', apiRoutes);
 
-
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
 app.use(express.static('./client/dist/'));
