@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SignUpForm from '../loginComponents/SignUpForm';
+import SignUpForm from '../loginComponents/SignUpForm.jsx';
 
 
 class SignUpPage extends React.Component {
@@ -58,7 +58,7 @@ class SignUpPage extends React.Component {
         localStorage.setItem('successMessage', xhr.response.message);
 
         // redirect user after sign up to login page
-        this.context.router.replace('/');
+        this.props.history.push('/login');
       } else {
         // failure
 

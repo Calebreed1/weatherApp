@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import WeatherApp from "./pages/WeatherApp"
 // import Navbar from "../src/components/Navbar"
 import LoginPage from "./pages/LoginPage"
-// import SignUpPage from "./loginContainers/SignUpPage";
 import SignUpPage from "../src/loginContainers/SignUpPage"
 import Dashboard from "../src/loginComponents/Dashboard"
 

@@ -1,9 +1,10 @@
   // load models
-  var User = require('../models');
+
 const mongoose = require('mongoose');
 
 module.exports.connect = (uri) => {
   mongoose.connect(uri);
+ 
   // plug in the promise library:
   mongoose.Promise = global.Promise;
 
@@ -13,5 +14,5 @@ module.exports.connect = (uri) => {
     process.exit(1);
   });
 
-
+  require('./user');
 };
